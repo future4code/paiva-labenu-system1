@@ -5,7 +5,19 @@ Content-Type: application/json
 
 {
 "nome": "paiva", 
-"dataInicio": "20/05/8888",
-"dataFinal": "20/05/9888",
+"dataInicio": "20/11/2021",
+"dataFinal": "21/09/2020",
+"modulo": 5
+}
+
+###
+
+POST http://localhost:3003/turma
+Content-Type: application/json
+
+{
+"nome": "norris-na-night", 
+"dataInicio": "20/06/2021",
+"dataFinal": "21/09/2021",
 "modulo": 1
 }
