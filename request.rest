@@ -6,18 +6,41 @@ Content-Type: application/json
 {
 "nome": "paiva", 
 "dataInicio": "20/11/2021",
-"dataFinal": "21/09/2020",
+"dataFinal": "21/12/2021",
 "modulo": 5
 }
 
 ###
 
 POST http://localhost:3003/turma
-Content-Type: application/json
+Content-Type: application/jsonC
 
 {
 "nome": "norris-na-night", 
 "dataInicio": "20/06/2021",
 "dataFinal": "21/09/2021",
 "modulo": 1
+}
+
+###
+
+POST http://localhost:3003/docente
+Content-Type: application/json 
+
+{
+ "nome": "Julia",
+ "email": "bb@bb.com",
+ "dataNasc": "12/08/1994"
+}
+
+
+
+
+###
+
+PUT http://localhost:3003/turma/docente/1627498679412
+Content-Type: application/json 
+
+{
+ "id": "1627581156719"
 }
