@@ -1,18 +1,19 @@
 import { Request, Response } from "express"
 import { alteraTurma } from "../data/alteraTurma"
+
 import { buscaPorID  } from "../data/buscaPorID"
 
-export const adicionaDocenteTurma = async (req: Request, res: Response): Promise<void> => {
+export const adicionaEstudanteTurma = async (req: Request, res: Response): Promise<void> => {
     try {
         const idTurma = req.params.idTurma
-        const idDocente = req.body.id
+        const idEstudante = req.body.id
 
         if (!idTurma) {
             throw new Error("preencha o id da turma")
         }
 
-        if (!idDocente) {
-            throw new Error("preencha o id do docente")
+        if (!idEstudante) {
+            throw new Error("preencha o id do estudante")
         }
 
         const idTurmaValidado = await buscaPorID(idTurma, "turma")
@@ -22,16 +23,16 @@ export const adicionaDocenteTurma = async (req: Request, res: Response): Promise
             throw new Error("turma não encontrada")
         }
 
-        const idDocenteValidado = await buscaPorID(idDocente, "docente")
+        const idEstudanteValidado = await buscaPorID(idEstudante, "estudante")
 
-        if (!idDocenteValidado) {
+        if (!idEstudanteValidado) {
             res.status(404)
-            throw new Error("docente não encontrada")
+            throw new Error("estudante não encontrado")
         }
 
-        await alteraTurma(idTurma, idDocente, "docente")
+        await alteraTurma(idTurma, idEstudante, "estudante")
 
-        res.status(200).send("o docente foi adicionado na turma")
+        res.status(200).send("o estudante foi adicionado a turma")
     } catch (error) {
         console.log(error)
         res.send(error.message || error.sqlMessage)
