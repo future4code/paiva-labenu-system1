@@ -4,7 +4,7 @@ export default async function inserirDocente(
     id: string,
     nome: string,
     email: string,
-    dataNasc: Date
+    dataNasc: string
 ) {
     await connection.raw(`
      INSERT INTO labenu_system_docente (id, nome, email, data_nasc, turma_id)
