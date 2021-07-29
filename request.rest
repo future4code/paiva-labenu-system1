@@ -9,3 +9,13 @@ Content-Type: application/json
 "dataFinal": "20/05/9888",
 "modulo": 1
 }
+
+###
+POST http://localhost:3003/estudante
+Content-Type: application/json
+
+{
+    "nome": "Bianca Leonardo",
+    "email": "bianca@gmail.com",
+    "data_nasc": "20/10/1992"
+}
