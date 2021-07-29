@@ -1,5 +1,4 @@
 ###
-
 POST http://localhost:3003/turma
 Content-Type: application/json
 
@@ -11,7 +10,6 @@ Content-Type: application/json
 }
 
 ###
-
 POST http://localhost:3003/turma
 Content-Type: application/jsonC
 
@@ -23,7 +21,6 @@ Content-Type: application/jsonC
 }
 
 ###
-
 POST http://localhost:3003/docente
 Content-Type: application/json 
 
@@ -33,12 +30,16 @@ Content-Type: application/json
  "dataNasc": "12/08/1994"
 }
 
+###
+PUT http://localhost:3003/turma/docente/1627498507943
+Content-Type: application/json 
 
-
+{
+ "id": "1627581156719"
+}
 
 ###
-
-PUT http://localhost:3003/turma/docente/1627498679412
+PUT http://localhost:3003/turma/estudante/1627498507943
 Content-Type: application/json 
 
 {
