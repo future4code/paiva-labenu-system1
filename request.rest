@@ -1,0 +1,11 @@
+###
+
+POST http://localhost:3003/turma
+Content-Type: application/json
+
+{
+"nome": "paiva", 
+"dataInicio": "20/05/8888",
+"dataFinal": "20/05/9888",
+"modulo": 1
+}
