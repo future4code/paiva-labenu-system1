@@ -1,4 +1,3 @@
-// id, nome, email, data de nascimento
 import { Request, Response } from "express"
 import inserirDocente from "../data/inserirDocente"
 import { ajustaData } from "../functions/ajustaData"

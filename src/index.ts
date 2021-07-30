@@ -5,24 +5,24 @@ import { criarDocente } from "./endpoints/criarDocente";
 import criarEstudante from "./endpoints/criarEstudante";
 import { criaTurma } from "./endpoints/criaTurma";
 import { criaTabelas } from "./endpoints/geraTabelas";
+import { pegarIdadeEstudante } from "./endpoints/pegarIdadeEstudante";
 import { removeDocenteTurma } from "./endpoints/removeDocenteTurma";
 
-app.post("/tabelas", criaTabelas)
 
+app.post("/tabelas", criaTabelas)
 app.post("/turma", criaTurma)
 app.post("/docente", criarDocente)
 app.post("/estudante", criarEstudante)
 
 
-
-
-
-
-
-
-
 app.put("/turma/estudante/:idTurma", adicionaEstudanteTurma)
-
 app.put("/turma/docente/:idTurma", adicionaDocenteTurma)
-
 app.put("/docente/remover/:idDocente", removeDocenteTurma)
+
+
+app.get("/estudante/idade/:id", pegarIdadeEstudante)
+
+
+
+
+
