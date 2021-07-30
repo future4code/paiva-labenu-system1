@@ -4,6 +4,7 @@ import { adicionaEstudanteTurma } from "./endpoints/adicionaEstudanteTurma";
 import { criarDocente } from "./endpoints/criarDocente";
 import criarEstudante from "./endpoints/criarEstudante";
 import { criaTurma } from "./endpoints/criaTurma";
+import { deletarEstudante } from "./endpoints/deletarEstudante";
 import { criaTabelas } from "./endpoints/geraTabelas";
 import { pegarIdadeEstudante } from "./endpoints/pegarIdadeEstudante";
 import { removeDocenteTurma } from "./endpoints/removeDocenteTurma";
@@ -21,6 +22,8 @@ app.put("/docente/remover/:idDocente", removeDocenteTurma)
 
 
 app.get("/estudante/idade/:id", pegarIdadeEstudante)
+
+app.delete("/estudante/deletar/:id", deletarEstudante)
 
 
 
