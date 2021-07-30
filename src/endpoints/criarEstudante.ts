@@ -23,7 +23,7 @@ try {
 
     await inserirEstudante(nome, email, newDate)
     
-    res.status(200).send('Estudante criado com sucesso')
+    res.status(200).send({message:'Estudante criado com sucesso'})
 } catch (error) {
     res.status(404).send(error.message || error.sqlMessage)
 }

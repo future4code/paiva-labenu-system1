@@ -22,7 +22,7 @@ export const criarDocente = async (
             dataAjustada
         )
 
-        res.status(200).send("Docente adicionado com sucesso.")
+        res.status(200).send({message:"Docente adicionado com sucesso."})
 
 
     } catch (error) {
