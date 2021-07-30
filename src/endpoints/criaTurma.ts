@@ -34,7 +34,7 @@ export const criaTurma = async (req: Request, res: Response): Promise<void> => {
 
       await inserirTurma(nome, novaDataInicial, novaDataFinal, modulo)
 
-      res.status(200).send("turma criada com sucesso")
+      res.status(200).send({message:"turma criada com sucesso"})
    } catch (error) {
       console.log(error)
       res.send(error.message || error.sqlMessage)

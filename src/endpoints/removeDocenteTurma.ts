@@ -19,7 +19,7 @@ export const removeDocenteTurma = async (req: Request, res: Response): Promise<v
         
         await removeTurma(id, "docente")
 
-        res.status(200).send("o docente foi removido na turma")
+        res.status(200).send({message:"o docente foi removido na turma"})
     } catch (error) {
         console.log(error)
         res.send(error.message || error.sqlMessage)

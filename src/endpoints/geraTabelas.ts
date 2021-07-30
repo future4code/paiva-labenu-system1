@@ -253,7 +253,7 @@ export const criaTabelas = async (req: Request, res: Response): Promise<void> =>
         
     `)
 
-        res.status(200).send("tabelas criadas")
+        res.status(200).send({message:"tabelas criadas"})
     } catch (error) {
         console.log(error)
         res.send(error.message || error.sqlMessage)
