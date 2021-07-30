@@ -58,3 +58,7 @@ Content-Type: application/json
 
 ###
 PUT http://localhost:3003/docente/remover/1627581156719
+
+
+###
+POST http://localhost:3003/tabelas
