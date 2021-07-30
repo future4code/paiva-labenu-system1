@@ -1,6 +1,7 @@
 import { app } from "./app";
 import { adicionaDocenteTurma } from "./endpoints/adicionaDocenteTurma";
 import { adicionaEstudanteTurma } from "./endpoints/adicionaEstudanteTurma";
+import { alterarModulo } from "./endpoints/alterarModulo";
 import { criarDocente } from "./endpoints/criarDocente";
 import criarEstudante from "./endpoints/criarEstudante";
 import { criaTurma } from "./endpoints/criaTurma";
@@ -18,6 +19,7 @@ app.post("/estudante", criarEstudante)
 
 app.put("/turma/estudante/:idTurma", adicionaEstudanteTurma)
 app.put("/turma/docente/:idTurma", adicionaDocenteTurma)
+app.put("/turma/modulo/:id", alterarModulo)
 app.put("/docente/remover/:idDocente", removeDocenteTurma)
 
 
