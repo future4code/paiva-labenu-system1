@@ -45,3 +45,6 @@ Content-Type: application/json
 {
  "id": "1627581156719"
 }
+
+###
+PUT http://localhost:3003/docente/remover/1627581156719
