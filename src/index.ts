@@ -1,6 +1,7 @@
 import { app } from "./app";
 import { adicionaDocenteTurma } from "./endpoints/adicionaDocenteTurma";
 import { adicionaEstudanteTurma } from "./endpoints/adicionaEstudanteTurma";
+import buscarDocentePorTurma from "./endpoints/buscaDocentePorTurma";
 import buscarEstudantePorTurma from "./endpoints/buscarEstudantePorTurma";
 import { criarDocente } from "./endpoints/criarDocente";
 import criarEstudante from "./endpoints/criarEstudante";
@@ -16,7 +17,7 @@ app.post("/estudante", criarEstudante)
 
 
 app.get('/estudante/turma/:id', buscarEstudantePorTurma)
-
+app.get('/docente/turma/:id', buscarDocentePorTurma)
 
 
 
