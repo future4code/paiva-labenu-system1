@@ -57,7 +57,15 @@ Content-Type: application/json
 }
 
 ###
+<<<<<<< HEAD
 GET http://localhost:3003/estudante/turma/0
 
 ###
 GET http://localhost:3003/docente/turma/1
+=======
+PUT http://localhost:3003/docente/remover/1627581156719
+
+
+###
+POST http://localhost:3003/tabelas
+>>>>>>> master

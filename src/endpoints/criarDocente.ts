@@ -1,4 +1,3 @@
-// id, nome, email, data de nascimento
 import { Request, Response } from "express"
 import inserirDocente from "../data/inserirDocente"
 import { ajustaData } from "../functions/ajustaData"
@@ -22,7 +21,7 @@ export const criarDocente = async (
             dataAjustada
         )
 
-        res.status(200).send("Docente adicionado com sucesso.")
+        res.status(200).send({message:"Docente adicionado com sucesso."})
 
 
     } catch (error) {

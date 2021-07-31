@@ -31,7 +31,7 @@ export const adicionaDocenteTurma = async (req: Request, res: Response): Promise
 
         await alteraTurma(idTurma, idDocente, "docente")
 
-        res.status(200).send("o docente foi adicionado na turma")
+        res.status(200).send({message:"o docente foi adicionado na turma"})
     } catch (error) {
         console.log(error)
         res.send(error.message || error.sqlMessage)

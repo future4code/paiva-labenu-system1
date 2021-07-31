@@ -32,7 +32,7 @@ export const adicionaEstudanteTurma = async (req: Request, res: Response): Promi
 
         await alteraTurma(idTurma, idEstudante, "estudante")
 
-        res.status(200).send("o estudante foi adicionado a turma")
+        res.status(200).send({message:"o estudante foi adicionado a turma"})
     } catch (error) {
         console.log(error)
         res.send(error.message || error.sqlMessage)
