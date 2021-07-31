@@ -4,6 +4,7 @@ import { adicionaEstudanteTurma } from "./endpoints/adicionaEstudanteTurma";
 import buscarDocentePorTurma from "./endpoints/buscaDocentePorTurma";
 import buscarEstudantePorTurma from "./endpoints/buscarEstudantePorTurma";
 import { alterarModulo } from "./endpoints/alterarModulo";
+import { buscaPorPassatempo } from "./endpoints/buscaPorPassatempo";
 import { criarDocente } from "./endpoints/criarDocente";
 import criarEstudante from "./endpoints/criarEstudante";
 import { criaTurma } from "./endpoints/criaTurma";
@@ -29,6 +30,7 @@ app.put("/estudante/remover/:idEstudante", removeEstudanteTurma)
 app.get('/estudante/turma/:id', buscarEstudantePorTurma)
 app.get('/docente/turma/:id', buscarDocentePorTurma)
 app.get("/estudante/idade/:id", pegarIdadeEstudante)
+app.get("/passatempo", buscaPorPassatempo)
 
 app.delete("/estudante/deletar/:id", deletarEstudante)
 
