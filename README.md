@@ -3,6 +3,9 @@
 ## Documentação API:
 https://documenter.getpostman.com/view/15825760/TzseK6bi 
 
+## Deploy no Herok:
+https://labe-system1.herokuapp.com/
+
 
 
 
