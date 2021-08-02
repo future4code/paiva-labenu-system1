@@ -4,7 +4,7 @@
 https://documenter.getpostman.com/view/15825760/TzseK6bi 
 
 ## Deploy no Heroku:
-https://labe-system1.herokuapp.com/
+https://labe-system.herokuapp.com/
 
 
 
