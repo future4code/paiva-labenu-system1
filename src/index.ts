@@ -15,6 +15,7 @@ import { removeDocenteTurma } from "./endpoints/removeDocenteTurma";
 import { removeEstudanteTurma } from "./endpoints/removeEstudanteTurma";
 import { buscarTodasAsTurmas } from "./endpoints/bucarTodasAsTurmas";
 import { buscarTodosOsEstudantes } from "./endpoints/buscarTodosOsEstudantes";
+import { buscarTodosOsDocentes } from "./endpoints/buscarTodosOsDocentes";
 
 
 app.post("/tabelas", criaTabelas)
@@ -31,6 +32,7 @@ app.put("/estudante/remover/:idEstudante", removeEstudanteTurma)
 
 app.get('/turmas', buscarTodasAsTurmas)
 app.get('/estudantes', buscarTodosOsEstudantes)
+app.get('/docentes', buscarTodosOsDocentes)
 app.get('/estudante/turma/:id', buscarEstudantePorTurma)
 app.get('/docente/turma/:id', buscarDocentePorTurma)
 app.get("/estudante/idade/:id", pegarIdadeEstudante)

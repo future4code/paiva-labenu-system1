@@ -10,7 +10,7 @@ export const buscarTodosOsEstudantes = async (req: Request, res: Response) => {
         const result = await buscaTabela('estudante')
 
         if(!result){
-            throw new Error("Turmas não encontradas");
+            throw new Error("Estudantes não encontrados");
             
         }
 

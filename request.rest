@@ -70,3 +70,6 @@ get http://localhost:3003/turmas
 
 ###
 get http://localhost:3003/estudantes
+
+###
+get http://localhost:3003/docentes
