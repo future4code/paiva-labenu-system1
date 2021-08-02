@@ -66,3 +66,7 @@ POST http://localhost:3003/tabelas
 
 ###
 get http://localhost:3003/turmas
+
+
+###
+get http://localhost:3003/estudantes

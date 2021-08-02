@@ -13,7 +13,8 @@ import { criaTabelas } from "./endpoints/geraTabelas";
 import { pegarIdadeEstudante } from "./endpoints/pegarIdadeEstudante";
 import { removeDocenteTurma } from "./endpoints/removeDocenteTurma";
 import { removeEstudanteTurma } from "./endpoints/removeEstudanteTurma";
-import { buscarTodasAsTurmas } from "./endpoints/bucasTodasAsTurmas";
+import { buscarTodasAsTurmas } from "./endpoints/bucarTodasAsTurmas";
+import { buscarTodosOsEstudantes } from "./endpoints/buscarTodosOsEstudantes";
 
 
 app.post("/tabelas", criaTabelas)
@@ -29,6 +30,7 @@ app.put("/docente/remover/:idDocente", removeDocenteTurma)
 app.put("/estudante/remover/:idEstudante", removeEstudanteTurma)
 
 app.get('/turmas', buscarTodasAsTurmas)
+app.get('/estudantes', buscarTodosOsEstudantes)
 app.get('/estudante/turma/:id', buscarEstudantePorTurma)
 app.get('/docente/turma/:id', buscarDocentePorTurma)
 app.get("/estudante/idade/:id", pegarIdadeEstudante)

@@ -1,7 +1,6 @@
 import { Request, Response } from "express";
 import moment from "moment";
 import buscaTabela from "../data/buscaTabela";
-import { turma } from "../types/turma";
 
 export const buscarTodasAsTurmas = async (req: Request, res: Response) => {
 
