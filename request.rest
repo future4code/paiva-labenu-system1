@@ -1,0 +1,75 @@
+###
+POST http://localhost:3003/turma
+Content-Type: application/json
+
+{
+"nome": "paiva", 
+"dataInicio": "20/11/2021",
+"dataFinal": "21/12/2021",
+"modulo": 5
+}
+
+###
+POST http://localhost:3003/turma
+Content-Type: application/jsonC
+
+{
+"nome": "norris-na-night", 
+"dataInicio": "20/06/2021",
+"dataFinal": "21/09/2021",
+"modulo": 1
+}
+
+###
+POST http://localhost:3003/docente
+Content-Type: application/json 
+
+{
+ "nome": "Julia",
+ "email": "bb@bb.com",
+ "dataNasc": "12/08/1994"
+}
+
+###
+POST http://localhost:3003/estudante
+Content-Type: application/json
+
+{
+    "nome": "Larissa Dias",
+    "email": "larissa@gmail.com",
+    "data_nasc": "20/10/2002"
+}
+
+###
+PUT http://localhost:3003/turma/docente/1627498507943
+Content-Type: application/json 
+
+{
+ "id": "1627581156719"
+}
+
+###
+PUT http://localhost:3003/turma/estudante/1627498507943
+Content-Type: application/json 
+
+{
+ "id": "1627581156719"
+}
+
+###
+PUT http://localhost:3003/docente/remover/1627581156719
+
+
+###
+POST http://localhost:3003/tabelas
+
+
+###
+get http://localhost:3003/turmas
+
+
+###
+get http://localhost:3003/estudantes
+
+###
+get http://localhost:3003/docentes

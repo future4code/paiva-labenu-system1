@@ -1,33 +1,36 @@
 ## LabenuSystem:
 
-Você estuda na Labenu_ há tanto tempo que já parecem anos, não é? Então, hoje, vamos pedir para criar um sistema que represente o básico da nossa organização. 
+## Documentação API:
+https://documenter.getpostman.com/view/15825760/TzseK6bi 
 
-Ele deve possuir, ao menos, as 3 entidades importantes:
+## Deploy no Heroku:
+https://labe-system.herokuapp.com/
 
-1. Estudantes 
 
-    Representa estudantes da nossa instituição. Eles devem possuir: id, nome, email, data de nascimento e os principais hobbies dele. 
 
-2. Docente
 
-    Representa docentes da nossa instituição. Eles devem possuir: id, nome, email, data de nascimento e todas as especialidades dele. Há 7 especialidades: React, Redux, CSS, Testes, Typescript, Programação Orientada a Objetos e Backend
 
-3. Turma
 
-    Toda turma é composta das seguintes características: id, nome, data de início, data de término, lista de professores responsáveis, uma lista de alunos e módulo atual em que a turma está.
+## Autores
 
-    O módulo pode assumir os valores de 1 a 7 ou `undefined`, indicando que as aulas dessa turma ainda não começaram. Para esse exercício, vamos considerar que existam dois tipos de turma: integral ou noturna. Há uma restrição para o nome das turmas noturnas: tem que terminar com `-na-night`.
+<table>
+  <tr>
+   
+  <td align="center"><a href="https://github.com/Biancasleonardo">
+    <img src="https://avatars.githubusercontent.com/u/61589574?v=4" width="100px" alt="Imagem do perfil de Bianca Leonardo"/>
+    <br />
+    <sub><b>Bianca de Souza Leonardo</b></sub>
+        <td align="center"><a href="https://github.com/peustef">
+    <img src="https://avatars.githubusercontent.com/u/20777850?v=4" width="100px" alt="Imagem do perfil de Pedro Stefani"/>
+    <br />
+    <sub><b>Pedro Stefani Saldanha</b></sub>
+    <br />
+  <td align="center"><a href="https://github.com/Rodrigo-Brezolin-Buquera">
+    <img src="https://avatars.githubusercontent.com/u/81428197?v=4" width="100px" alt="Imagem do perfil de Rodrigo"/>
+    <br />
+    <sub><b>Rodrigo Brezolin Buquera</b></sub>
+</table>
 
-As funcionalidades básicas são:
 
-→ Criar estudante;
 
-→ Criar docente;
 
-→ Criar turma;
-
-→ Adicionar estudante na turma;
-
-→ Adicionar docente na turma;
-
-→ Pegar a idade de algum estudante a partir do id
